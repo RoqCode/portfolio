@@ -1,8 +1,8 @@
 $("body").append(`
     <footer>
-      <div
+      <div id="Kontakt"
         class="contacts"
-        style="background-image: url('../src/img/gradient2_footer.jpg')"
+        style="background-image: url('src/img/gradient2_footer.jpg')"
       >
         <h1 class="footer-head">Kontakt</h1>
         <p class="call-to-action white text">
