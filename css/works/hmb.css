@@ -1,0 +1,33 @@
+.card {
+  margin-left: 5%;
+  max-width: 40%;
+}
+
+.letter {
+  float: right;
+  max-width: 40%;
+  margin-right: 5%;
+}
+
+.second-text {
+  margin-left: 10%;
+  margin-top: 15em;
+}
+
+.img-wrapper {
+  margin-top: 30em;
+}
+
+.flyer {
+  float: right;
+  max-width: 50%;
+  margin-right: 5%;
+
+  margin-top: 20em;
+}
+
+.posters {
+  max-width: 90%;
+  margin-left: 5%;
+  margin-top: 20em;
+}

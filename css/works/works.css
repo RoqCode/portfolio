@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: roc-grotesk, sans-serif;
+}
+
+body {
+  background-color: rgb(23, 23, 24);
+}
+
+.text {
+  font-family: "Space Mono", monospace;
+  font-size: 2.5rem;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.white {
+  color: white;
+}
+
+.red {
+  color: rgb(234, 66, 106);
+}
+
+.red-outline {
+  color: rgba(0, 0, 0, 0);
+  -webkit-text-stroke: 2px rgb(234, 66, 106);
+}
+
+.white-outline {
+  color: rgba(0, 0, 0, 0);
+  -webkit-text-stroke: 2px rgb(255, 255, 255);
+}
+
+h1 {
+  font-size: 6rem;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 3em;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 2.5em;
+  font-weight: 400;
+}
+
+.works-intro {
+  width: 90%;
+  margin: 0 5%;
+  padding-top: 20em;
+}
+
+.intro-wrapper {
+  margin-left: 5%;
+  display: inline-block;
+}
+
+.sub-head {
+  margin-top: 0.5em;
+}
+
+.intro-text {
+  margin-top: 5em;
+  max-width: 40ch;
+  display: inline-block;
+}
+
+.title-img {
+  float: right;
+  width: 60%;
+}
+
+.next {
+  margin-top: 10rem;
+  text-align: center;
+  margin-bottom: -10em;
+}
+
+.next a {
+  text-decoration: none;
+}
+
+.next-text {
+  font-weight: 600;
+  font-size: 20em;
+  color: rgba(0, 0, 0, 0);
+  -webkit-text-stroke: 3px rgb(234, 66, 106);
+
+  transition: color 0.2s ease-in-out;
+}
+
+.next:hover .next-text {
+  color: rgba(234, 66, 106, 1);
+}
+
+.button {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 3em;
+  font-size: 2.5em;
+}
+
+.button span {
+  padding: 0.3em 1.5em;
+  border: 3px solid white;
+}

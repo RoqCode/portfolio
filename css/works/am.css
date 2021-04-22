@@ -1,0 +1,24 @@
+.mag-img {
+  max-width: 50%;
+  margin-left: 5%;
+  margin-top: 20em;
+  display: inline-block;
+}
+
+.mag-img-small {
+  max-width: 40%;
+  margin-left: 5%;
+  margin-top: 20em;
+  display: inline-block;
+}
+
+.fright {
+  display: inline-block;
+  margin-left: 5%;
+}
+
+.info-text {
+  position: relative;
+  top: -20em;
+  width: 30%;
+}

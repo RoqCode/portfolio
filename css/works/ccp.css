@@ -1,0 +1,104 @@
+.moire-circles {
+  max-width: 50%;
+  margin-left: 5%;
+  margin-top: 20em;
+  display: inline-block;
+}
+
+.fright {
+  display: inline-block;
+  margin-left: 5%;
+}
+
+.info-text {
+  position: relative;
+  top: -10em;
+  width: 30%;
+}
+
+.info-text2 {
+  position: relative;
+  top: -50em;
+  width: 30%;
+}
+.poster-wrapper {
+  text-align: right;
+}
+
+.posters1 {
+  max-width: 50%;
+  margin-right: 5%;
+  margin-top: 20em;
+  display: inline-block;
+}
+
+.posters2 {
+  max-width: 50%;
+  margin-right: 5%;
+  margin-top: 5em;
+  display: inline-block;
+}
+
+.poster-text {
+  position: relative;
+  text-align: left;
+  margin-left: 10%;
+  top: 12em;
+  width: 40ch;
+}
+
+.projekt-head {
+  text-align: left;
+  margin-left: 10%;
+  position: relative;
+  top: 5em;
+  font-size: 5em;
+}
+
+.button-wrap {
+  text-align: left;
+}
+
+.poster-button {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 3em;
+  font-size: 2.5em;
+  margin-left: 10%;
+  top: 15em;
+}
+
+.poster-button span {
+  padding: 0.3em 1.5em;
+  border: 3px solid white;
+}
+
+.button > a {
+  text-decoration: none;
+}
+
+.poster-button > a {
+  text-decoration: none;
+}
+
+.video-block {
+  margin-left: 5%;
+  margin-top: 20em;
+  width: 90%;
+  text-align: center;
+}
+
+.video-block > * {
+  margin: 5em;
+}
+
+.prog-poster-wrap {
+  position: relative;
+  margin-top: -50em;
+}
+
+.poster-text-wrap {
+  position: relative;
+  top: 20em;
+}

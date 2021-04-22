@@ -1,0 +1,143 @@
+.hi {
+  font-size: 20em;
+  font-weight: 600;
+}
+
+.nice {
+  margin-top: -0.2em;
+  font-size: 10em;
+  font-weight: 600;
+}
+
+.intro-wrapper {
+  margin-top: 30em;
+  margin-left: 10%;
+  display: inline-block;
+}
+
+.portrait {
+  width: 30%;
+  display: inline-block;
+  position: relative;
+  top: 25em;
+  left: -10%;
+  z-index: -1;
+}
+
+.about-me-intro {
+  font-size: 5em;
+  font-weight: 400;
+}
+
+.about-me-text {
+  margin-top: 3em;
+}
+
+.about-me-wrapper {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  margin-top: 35em;
+}
+
+.strengths-block {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70%;
+  margin-top: 16em;
+}
+
+.strengths-header {
+  font-size: 5em;
+  margin-bottom: 0.75em;
+}
+
+.strengths-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.strengths {
+  margin-top: 1em;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 50%;
+}
+
+.skills-block {
+  margin-top: 16em;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70%;
+}
+
+.skill {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4em;
+}
+
+.line {
+  flex-grow: 1;
+  height: 3px;
+  background-color: rgb(234, 66, 106);
+  margin-left: 2em;
+  margin-right: 1em;
+}
+
+.skill p {
+  flex-grow: 0;
+  display: inline;
+  font-size: 3em;
+}
+
+.skill-text-wrapper {
+  display: flex;
+  align-items: center;
+  flex-grow: 2;
+}
+
+.emptyicon {
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin: 0 1.5em;
+}
+
+.icon-parent {
+  flex-grow: 0;
+}
+
+.icon-wrapper {
+  display: flex;
+  align-items: center;
+  width: auto;
+}
+
+.icon-wrapper svg {
+  margin: 0 1.5em;
+  height: 5em;
+}
+
+.about-button {
+  position: relative;
+  margin-top: 5em;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 3em;
+  font-size: 2.5em;
+}
+
+.about-button span {
+  padding: 0.3em 1.5em;
+  border: 3px solid white;
+}

@@ -1,0 +1,32 @@
+.title-img-kuli {
+  float: right;
+  width: 60%;
+}
+.protowrapper {
+  display: inline-block;
+  margin-top: 20em;
+  margin-left: 5%;
+  text-align: left;
+}
+
+.protoscreen {
+  width: 60%;
+}
+
+.proto-info {
+  display: inline-block;
+  max-width: 40ch;
+  position: relative;
+  margin-left: 5%;
+  top: -15em;
+}
+
+.kuli-gallery {
+  margin: 20em 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.kuli-gallery img {
+  width: 30%;
+}

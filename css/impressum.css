@@ -1,0 +1,30 @@
+.impressum-wrapper {
+  margin: 0 5%;
+}
+
+.impressum_block {
+  height: 20em;
+}
+
+.impressum-wrapper h1 {
+  margin-bottom: 1em;
+}
+
+.impressum-wrapper h2 {
+  margin-bottom: 0.5em;
+  margin-top: 3em;
+  font-weight: 600;
+}
+.impressum-wrapper h3 {
+  font-weight: 600;
+  margin-bottom: 0.5em;
+  margin-top: 1em;
+}
+
+.impressum-wrapper p {
+  width: 60ch;
+}
+
+.außschluss {
+  margin-top: 2em;
+}

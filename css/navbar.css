@@ -1,0 +1,53 @@
+#navBar {
+  position: fixed;
+  font-size: 1.8rem;
+  width: 100%;
+  height: 6em;
+  display: flex;
+  align-items: center;
+  z-index: 99;
+}
+
+#navBar ul {
+  list-style: none;
+  position: absolute;
+  right: 2%;
+}
+
+#nav-logo {
+  display: inline-block;
+  position: absolute;
+  left: 2%;
+}
+
+.nav-link a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-link {
+  float: left;
+  margin: 0 2em;
+  position: relative;
+}
+
+.nav-link-a::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  position: absolute;
+  left: -1px;
+  bottom: -3px;
+
+  transition: width 0.2s ease-in-out;
+}
+
+.nav-link-a:hover::before {
+  width: 100%;
+}
+
+.nav-link .spinner {
+  font-size: 1.8rem;
+}
