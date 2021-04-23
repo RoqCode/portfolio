@@ -94,6 +94,7 @@
 }
 
 .prog-poster-wrap {
+  pointer-events: none;
   position: relative;
   margin-top: -50em;
 }
