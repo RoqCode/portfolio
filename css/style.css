@@ -6,6 +6,7 @@
 html {
   font-size: 62.5%;
   font-family: roc-grotesk, sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -125,6 +126,20 @@ h3 {
 
 .gallery-card img {
   max-width: 100%;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.gallery-card img:hover {
+  opacity: 0.8;
+}
+
+.gallery-card video {
+  max-width: 100%;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.gallery-card video:hover {
+  opacity: 0.8;
 }
 
 .card-text-wrapper {

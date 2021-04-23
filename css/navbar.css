@@ -51,3 +51,31 @@
 .nav-link .spinner {
   font-size: 1.8rem;
 }
+
+.back-to-top {
+  position: fixed;
+  bottom: 2em;
+  right: 2em;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background-color: rgb(234, 66, 106);
+  z-index: 99;
+  cursor: pointer;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
+
+  display: none;
+}
+
+.back-to-top svg {
+  position: relative;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, 0) scale(2);
+
+  transition: all 0.2s cubic-bezier(0.11, 0.49, 0.42, 1.68);
+}
+
+.back-to-top:hover svg {
+  top: 15%;
+}

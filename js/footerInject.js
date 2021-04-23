@@ -68,9 +68,9 @@ $("body").append(`
         </div>
         <div class="importants">
         <div class="importants-wrapper">
-          <a class="text white small" href="impressum.html">Impressum</a></div>
+          <a class="text white small transition-a" href="impressum.html">Impressum</a></div>
           </br>
-          <a class="text white small" href="datenschutz.html">Datenschutz</a>
+          <a class="text white small transition-a" href="datenschutz.html">Datenschutz</a>
         </div>
         <div class="block"></div>
       </div>

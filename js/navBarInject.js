@@ -1,6 +1,6 @@
 $("body").prepend(`
     <div id="navBar" class="text white">
-    <a href="index.html">
+    <a class="transition-a" href="index.html">
       <div id="nav-logo">
         <svg
           width="74"
@@ -45,9 +45,39 @@ $("body").prepend(`
       </div>
       </a>
       <ul>
-        <li class="nav-link"><a class="nav-link-a" href="index.html#Arbeiten">Arbeiten</a></li>
-        <li class="nav-link"><a class="nav-link-a" href="about-me.html">Über mich</a></li>
-        <li class="nav-link"><a class="nav-link-a" href="#">Kontakt</a></li>
+        <li class="nav-link"><a class="nav-link-a transition-a" href="index.html#Arbeiten">Arbeiten</a></li>
+        <li class="nav-link"><a class="nav-link-a transition-a" href="about-me.html">Über mich</a></li>
+        <li class="nav-link"><a class="nav-link-a transition-a" href="index.html#Kontakt">Kontakt</a></li>
       </ul>
+       <div class="back-to-top">
+      <svg
+        width="13"
+        height="9"
+        viewBox="0 0 13 9"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M10.2102 9.00031H1.79019C1.45778 9.0008 1.13203 8.90713 0.850638 8.73016C0.56925 8.55318 0.343733 8.30014 0.200191 8.00032C0.0321586 7.64457 -0.0325605 7.24878 0.0134084 6.85805C0.0593773 6.46731 0.214185 6.09735 0.460191 5.79032L4.67019 0.690315C4.83541 0.499685 5.03967 0.346799 5.26914 0.242018C5.49861 0.137236 5.74793 0.0830078 6.00019 0.0830078C6.25245 0.0830078 6.50177 0.137236 6.73124 0.242018C6.96071 0.346799 7.16497 0.499685 7.33019 0.690315L11.5402 5.79032C11.7862 6.09735 11.941 6.46731 11.987 6.85805C12.0329 7.24878 11.9682 7.64457 11.8002 8.00032C11.6566 8.30014 11.4311 8.55318 11.1497 8.73016C10.8684 8.90713 10.5426 9.0008 10.2102 9.00031ZM2.00019 7.00032H9.90019L6.00019 2.18032L2.00019 7.00032Z"
+          fill="white"
+        />
+      </svg>
+    </div>
     </div>
 `);
+
+let button = $(".back-to-top");
+let d = 600;
+
+$(window).scroll(function () {
+  if (document.body.scrollTop > d || document.documentElement.scrollTop > d) {
+    button.fadeIn("fast");
+  } else {
+    button.fadeOut("fast");
+  }
+});
+
+button.click(() => {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+});
