@@ -16,8 +16,8 @@
 
 #nav-logo {
   display: inline-block;
-  position: absolute;
-  left: 2%;
+  position: relative;
+  left: 2vw;
 }
 
 .nav-link a {
@@ -78,4 +78,27 @@
 
 .back-to-top:hover svg {
   top: 15%;
+}
+
+@media only screen and (max-width: 610px) {
+  .nav-link {
+    margin: 0 1em;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .nav-link {
+    float: none;
+    text-align: right;
+    margin: 0.5em 1em;
+  }
+
+  #navBar ul {
+    margin-top: 1em;
+  }
+
+  .back-to-top {
+    bottom: 1em;
+    right: 1em;
+  }
 }

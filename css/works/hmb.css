@@ -1,12 +1,9 @@
 .card {
-  margin-left: 5%;
-  max-width: 40%;
+  max-width: 47.5%;
 }
 
 .letter {
-  float: right;
-  max-width: 40%;
-  margin-right: 5%;
+  max-width: 47.5%;
 }
 
 .second-text {
@@ -19,15 +16,33 @@
 }
 
 .flyer {
-  float: right;
-  max-width: 50%;
-  margin-right: 5%;
-
-  margin-top: 20em;
+  max-width: 60%;
 }
 
 .posters {
   max-width: 90%;
   margin-left: 5%;
   margin-top: 20em;
+}
+
+@media only screen and (max-width: 1250px) {
+  .card {
+    max-width: 100%;
+    margin-bottom: 5em;
+  }
+
+  .letter {
+    max-width: 100%;
+  }
+
+  .flyer {
+    max-width: 100%;
+    margin-top: 5em;
+  }
+
+  .posters {
+    max-width: 90%;
+    margin-left: 5%;
+    margin-top: 5em;
+  }
 }

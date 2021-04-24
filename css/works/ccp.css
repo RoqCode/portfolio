@@ -21,22 +21,25 @@
   top: -50em;
   width: 30%;
 }
+
+.info-text {
+  width: 100% !important;
+  top: 0;
+  margin: 0 0;
+}
 .poster-wrapper {
   text-align: right;
 }
 
 .posters1 {
-  max-width: 50%;
+  max-width: 100%;
   margin-right: 5%;
-  margin-top: 20em;
-  display: inline-block;
 }
 
 .posters2 {
-  max-width: 50%;
+  max-width: 100%;
   margin-right: 5%;
   margin-top: 5em;
-  display: inline-block;
 }
 
 .poster-text {
@@ -47,12 +50,16 @@
   width: 40ch;
 }
 
+.poster-text-wrap {
+  margin-right: 2em;
+}
+
 .projekt-head {
   text-align: left;
-  margin-left: 10%;
+  margin-left: 0;
   position: relative;
-  top: 5em;
   font-size: 5em;
+  margin-bottom: 1em;
 }
 
 .button-wrap {
@@ -65,8 +72,6 @@
   display: inline-block;
   margin-top: 3em;
   font-size: 2.5em;
-  margin-left: 10%;
-  top: 15em;
 }
 
 .poster-button span {
@@ -89,17 +94,72 @@
   text-align: center;
 }
 
+.poster-button2 {
+  display: none;
+}
+
 .video-block > * {
   margin: 5em;
 }
 
 .prog-poster-wrap {
   pointer-events: none;
-  position: relative;
-  margin-top: -50em;
+  max-width: 60%;
 }
 
-.poster-text-wrap {
-  position: relative;
-  top: 20em;
+.smaller {
+  display: none;
+}
+
+@media only screen and (max-width: 1250px) {
+  .moire-circles {
+    max-width: 90%;
+  }
+
+  .posters1 {
+    max-width: 100%;
+  }
+
+  .posters2 {
+    max-width: 100%;
+  }
+
+  .prog-poster-wrap {
+    pointer-events: none;
+    max-width: 100%;
+    margin-top: 5em;
+  }
+
+  .poster-button {
+    display: none;
+  }
+
+  .poster-button2 {
+    display: block;
+    margin-top: 2em;
+  }
+
+  .moire-circles {
+    margin-top: 5em;
+    margin-bottom: 5em;
+  }
+
+  .video-block {
+    margin-top: 5em;
+  }
+
+  .videos {
+    max-width: 100%;
+    margin: 2em 0;
+  }
+}
+
+@media only screen and (max-width: 365px) {
+  .too-big {
+    display: none;
+  }
+
+  .smaller {
+    display: block;
+  }
 }

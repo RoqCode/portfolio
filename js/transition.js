@@ -1,8 +1,6 @@
 $("body").prepend(`
     <div class="transition-wrap">
     <div class="transition transition-1 transition-function is-active">
-        <div class="trans-red is-active"></div>
-        <div class="trans-white is-active"></div>
     </div>
     <div class="transition transition-2 transition-function is-active"></div>
     <div class="transition transition-3 transition-function is-active"></div>

@@ -16,7 +16,7 @@
 }
 
 .portrait {
-  width: 30%;
+  max-width: 30%;
   display: inline-block;
   position: relative;
   top: 25em;
@@ -27,6 +27,22 @@
 .about-me-intro {
   font-size: 5em;
   font-weight: 400;
+
+  /* These are technically the same, but use both */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+
+  -ms-word-break: break-all;
+  /* This is the dangerous one in WebKit, as it breaks things wherever */
+  word-break: break-all;
+  /* Instead use this non-standard one: */
+  word-break: break-word;
+
+  /* Adds a hyphen where the word breaks, if supported (No Blink) */
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
 }
 
 .about-me-text {
@@ -104,6 +120,12 @@
   flex-grow: 2;
 }
 
+.tab {
+  border: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
 .emptyicon {
   display: block;
   width: 50px;
@@ -140,4 +162,119 @@
 .about-button span {
   padding: 0.3em 1.5em;
   border: 3px solid white;
+}
+
+@media only screen and (max-width: 1800px) {
+  .about-me-wrapper {
+    width: 70%;
+  }
+
+  .intro-wrapper {
+    margin-top: 15em;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .portrait {
+    margin-left: -10%;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .skills-block {
+    width: 80%;
+  }
+
+  .strengths-block {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+  .about-me-wrapper {
+    width: 90%;
+  }
+
+  .portrait {
+    margin-left: 0;
+    display: block;
+    left: 15%;
+    max-width: 50%;
+    margin-top: -30em;
+  }
+
+  .hi {
+    font-size: 12em;
+  }
+
+  .nice {
+    font-size: 8em;
+    font-weight: 400;
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  .about-me-wrapper {
+    width: 90%;
+  }
+
+  .skills-block {
+    width: 90%;
+  }
+
+  .strengths-block {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 864px) {
+  .line {
+    display: none;
+  }
+  .skill-text-wrapper {
+    justify-content: flex-end;
+    text-align: right;
+  }
+}
+
+@media only screen and (max-width: 690px) {
+  .strengths-block {
+    margin-top: 10em;
+  }
+
+  .strengths-header {
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  .strengths-items {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .skills-block {
+    margin-top: 10em;
+  }
+
+  .skill {
+    flex-direction: column;
+  }
+
+  .emptyicon {
+    display: none;
+  }
+
+  .icon-parent {
+    margin-top: 1em;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .tab {
+    display: none;
+  }
+
+  .about-me-intro {
+    font-size: 4em;
+  }
 }

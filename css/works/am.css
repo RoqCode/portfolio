@@ -1,24 +1,22 @@
 .mag-img {
   max-width: 50%;
-  margin-left: 5%;
-  margin-top: 20em;
-  display: inline-block;
 }
 
 .mag-img-small {
-  max-width: 40%;
-  margin-left: 5%;
-  margin-top: 20em;
-  display: inline-block;
+  max-width: 47.5%;
 }
 
-.fright {
-  display: inline-block;
-  margin-left: 5%;
-}
+@media only screen and (max-width: 1250px) {
+  .mag-img {
+    max-width: 100%;
+  }
 
-.info-text {
-  position: relative;
-  top: -20em;
-  width: 30%;
+  .mag-img-small {
+    max-width: 100%;
+    margin-top: 5em;
+  }
+
+  .info-text {
+    margin: 2em 5%;
+  }
 }

@@ -59,11 +59,41 @@ h3 {
   width: 90%;
   margin: 0 5%;
   padding-top: 20em;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.info-text {
+  position: relative;
+  top: 0;
+  margin: 0 5%;
+  max-width: 40ch;
 }
 
 .intro-wrapper {
-  margin-left: 5%;
+  margin: 0 0;
   display: inline-block;
+  max-width: 38%;
+  flex-grow: 2;
+}
+
+.intro-wrapper h1 {
+  /* These are technically the same, but use both */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+
+  -ms-word-break: break-all;
+  /* This is the dangerous one in WebKit, as it breaks things wherever */
+  word-break: break-all;
+  /* Instead use this non-standard one: */
+  word-break: break-word;
+
+  /* Adds a hyphen where the word breaks, if supported (No Blink) */
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
 }
 
 .sub-head {
@@ -72,13 +102,12 @@ h3 {
 
 .intro-text {
   margin-top: 5em;
-  max-width: 40ch;
   display: inline-block;
 }
 
 .title-img {
-  float: right;
   width: 60%;
+  object-fit: contain;
 }
 
 .next {
@@ -115,4 +144,94 @@ h3 {
 .button span {
   padding: 0.3em 1.5em;
   border: 3px solid white;
+}
+
+.text-img-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10em 5%;
+}
+
+.flex-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 10em 5%;
+}
+
+@media only screen and (max-width: 1250px) {
+  .works-intro {
+    flex-direction: column-reverse;
+    padding-top: 10em;
+    margin-bottom: 5em;
+  }
+
+  .text-img-wrapper {
+    flex-direction: column;
+    margin: 5em 5%;
+  }
+
+  .flex-wrapper {
+    flex-direction: column;
+    margin: 5em 5%;
+  }
+
+  .intro-wrapper {
+    max-width: 70%;
+    margin-top: 3em;
+  }
+
+  .title-img {
+    width: 100%;
+  }
+  .info-text {
+    max-width: none;
+    margin: 2em 0;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .next {
+    margin-bottom: 0em;
+  }
+  .intro-wrapper {
+    max-width: 90%;
+    margin-top: 3em;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .text {
+    font-size: 2rem;
+  }
+
+  .intro-text {
+    margin-top: 3em;
+  }
+
+  .text-img-wrapper {
+    flex-direction: column;
+    margin: 2em 5%;
+  }
+
+  .flex-wrapper {
+    flex-direction: column;
+    margin: 2em 5%;
+  }
+
+  .next-text {
+    font-weight: 600;
+    font-size: 12em;
+    color: rgba(0, 0, 0, 0);
+    -webkit-text-stroke: 3px rgb(234, 66, 106);
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .next-text {
+    font-weight: 600;
+    font-size: 8em;
+    color: rgba(0, 0, 0, 0);
+    -webkit-text-stroke: 2px rgb(234, 66, 106);
+  }
 }

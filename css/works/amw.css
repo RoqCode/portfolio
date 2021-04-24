@@ -1,34 +1,27 @@
 .mag-web-img {
   max-width: 50%;
-  margin-left: 5%;
-  margin-top: 20em;
-  display: inline-block;
-}
-
-.fright {
-  display: inline-block;
-  margin-left: 5%;
-}
-
-.info-text {
-  position: relative;
-  top: -10em;
-  width: 30%;
-}
-
-.info-text2 {
-  position: relative;
-  top: -50em;
-  width: 30%;
+  margin-top: 10em;
 }
 
 .mag-img-small {
   max-width: 40%;
   margin-left: 5%;
-  margin-top: 20em;
-  display: inline-block;
+  margin-top: 10em;
 }
 
 .button > a {
   text-decoration: none;
+}
+
+@media only screen and (max-width: 1250px) {
+  .mag-web-img {
+    margin-top: 5em;
+    max-width: 100%;
+    margin-bottom: 5em;
+  }
+
+  .mag-img-small {
+    margin-top: 5em;
+    max-width: 90%;
+  }
 }
