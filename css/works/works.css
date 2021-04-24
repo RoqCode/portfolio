@@ -41,7 +41,7 @@ body {
 }
 
 h1 {
-  font-size: 6rem;
+  font-size: 6em;
   font-weight: 500;
 }
 
@@ -238,5 +238,13 @@ h3 {
     font-size: 8em;
     color: rgba(0, 0, 0, 0);
     -webkit-text-stroke: 2px rgb(234, 66, 106);
+  }
+
+  h1 {
+    font-size: 4em;
+  }
+
+  .red-outline {
+    -webkit-text-stroke: 1px rgb(234, 66, 106);
   }
 }
