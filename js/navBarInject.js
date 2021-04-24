@@ -78,10 +78,30 @@ $(window).scroll(function () {
 });
 
 button.click(() => {
-  $("html, body").animate(
-    {
-      scrollTop: 0,
-    },
-    800
-  );
+  if (iOS()) {
+    $("html, body").animate(
+      {
+        scrollTop: 0,
+      },
+      800
+    );
+  } else {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
 });
+
+function iOS() {
+  return (
+    [
+      "iPad Simulator",
+      "iPhone Simulator",
+      "iPod Simulator",
+      "iPad",
+      "iPhone",
+      "iPod",
+    ].includes(navigator.platform) ||
+    // iPad on iOS 13 detection
+    (navigator.userAgent.includes("Mac") && "ontouchend" in document)
+  );
+}
