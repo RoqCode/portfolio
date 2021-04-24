@@ -187,6 +187,7 @@ h3 {
   .info-text {
     max-width: 40ch;
     margin: 2em 0;
+    align-self: flex-start;
   }
 }
 
