@@ -186,7 +186,7 @@ h3 {
   }
   .info-text {
     max-width: 40ch;
-    margin: 2em 0;
+    margin: 2em 0 !important;
     align-self: flex-start;
   }
 }
