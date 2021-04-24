@@ -236,9 +236,11 @@ h3 {
   .spinner {
     transform: scale(0.6);
   }
+}
 
+@media only screen and (max-height: 940px) {
   .spinner-wrap {
-    bottom: 0;
+    display: none;
   }
 }
 
