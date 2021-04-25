@@ -278,3 +278,29 @@
     font-size: 4em;
   }
 }
+
+@media only screen and (max-width: 440px) {
+  .tab {
+    display: none;
+  }
+
+  .about-me-intro {
+    font-size: 3em;
+  }
+
+  .skill-text-wrapper {
+    text-align: center;
+  }
+
+  .skills-block {
+    width: 95%;
+  }
+
+  .hi {
+    font-size: 8em;
+  }
+
+  .nice {
+    font-size: 5em;
+  }
+}
