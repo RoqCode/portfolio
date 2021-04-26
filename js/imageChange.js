@@ -24,6 +24,7 @@ function imageSwap() {
     $("#kulinarium-img").attr("src", "src/img/kulinarium_title_m.jpg");
     //Creative Coding Video
     $(".creative-video").attr("preload", "metadata");
+    $(".creative-video").attr("poster", "src/img/CreativeCodings/poster_m.jpg");
   } else if (window.innerWidth > 768) {
     //hero gradient
     $("#hero").css("background-image", "url('src/img/gradient2.jpg')");
