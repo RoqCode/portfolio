@@ -11,7 +11,7 @@ $("body").prepend(`
 const transitions = $(".transition");
 const anchors = $(".transition-a");
 
-$(document).ready(function () {
+$(window).on("load", function () {
   for (let i = 0; i < transitions.length; i++) {
     $(transitions[i]).one("transitionend", function () {
       $(this).removeClass("transition-function");
