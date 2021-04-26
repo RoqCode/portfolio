@@ -25,12 +25,14 @@
     />
     <link rel="icon" type="image/png" href="favicon.png" />
     <title>Hajo Haas | Portfolio</title>
+    <script src="js/jquery-3.6.0.min.js"></script>
   </head>
 
   <body>
+    <script src="js/transition.js"></script>
     <main>
       <!-- HeroSection -->
-      <div id="hero" style="background-image: url('src/img/gradient2.jpg')">
+      <div id="hero">
         <!-- <img src="src/img/gradient2.jpg" alt="background gradient" id="bg-img" /> -->
         <div class="test-wrap">
           <div class="hero-wrap">
@@ -262,7 +264,8 @@
           <div class="gallery-card hmb-card">
             <a class="transition-a" href="historisches-musem-bremerhaven.html"
               ><img
-                src="src/img/HMB_TitleCard.jpg"
+                id="hmb-img"
+                src=""
                 alt="neues Logo Historisches Museum Bremerhaven"
             /></a>
             <div class="card-text-wrapper">
@@ -273,7 +276,8 @@
           <div class="gallery-card anners-web-card">
             <a class="transition-a" href="anners-web.html"
               ><img
-                src="src/img/anners_web_titlecard.jpg"
+                id="anners-web-img"
+                src=""
                 alt="Webseite des anner Magazins"
             /></a>
             <div class="card-text-wrapper">
@@ -286,7 +290,8 @@
           <div class="gallery-card magazin-card">
             <a class="transition-a" href="anners-magazin.html"
               ><img
-                src="src/img/anners_magazin_titlecard.jpg"
+                id="anners-mag-img"
+                src=""
                 alt="Webseite des anner Magazins"
             /></a>
             <div class="card-text-wrapper">
@@ -296,7 +301,7 @@
           </div>
           <div class="gallery-card poster-card">
             <a class="transition-a" href="posters.html"
-              ><img src="src/img/poster_card.jpg" alt="modernes Poster Design"
+              ><img id="poster-img" src="" alt="modernes Poster Design"
             /></a>
             <div class="card-text-wrapper">
               <h2 class="card-title">Posters</h2>
@@ -305,7 +310,7 @@
           </div>
           <div class="gallery-card kulinarium-card">
             <a class="transition-a" href="kulinarium.html"
-              ><img src="src/img/kulinarium_title.jpg" alt="Kulinarium App"
+              ><img id="kulinarium-img" src="" alt="Kulinarium App"
             /></a>
             <div class="card-text-wrapper">
               <h2 class="card-title">Kulinarium</h2>
@@ -318,7 +323,6 @@
                 class="creative-video"
                 src="src/img/CreativeCodings/moire_plotter.mp4"
                 loop
-                autoplay
                 muted
               ></video
             ></a>
@@ -331,9 +335,9 @@
         <div class="endblock"></div>
       </section>
     </main>
-    <script src="js/jquery-3.6.0.min.js"></script>
+
+    <script src="js/imageChange.js"></script>
     <script src="js/navBarInject.js"></script>
     <script src="js/footerInject.js"></script>
-    <script src="js/transition.js"></script>
   </body>
 </html>

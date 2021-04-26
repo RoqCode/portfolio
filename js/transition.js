@@ -12,6 +12,8 @@ const transitions = $(".transition");
 const anchors = $(".transition-a");
 
 $(window).on("load", function () {
+  console.log("load");
+
   for (let i = 0; i < transitions.length; i++) {
     $(transitions[i]).one("transitionend", function () {
       $(this).removeClass("transition-function");
