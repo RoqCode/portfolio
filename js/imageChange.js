@@ -23,7 +23,7 @@ function imageSwap() {
     //Kulinarium
     $("#kulinarium-img").attr("src", "src/img/kulinarium_title_m.jpg");
     //Creative Coding Video
-    $(".creative-video").attr("preload", "metadata");
+    $(".creative-video").attr("preload", "none");
     $(".creative-video").attr("poster", "src/img/CreativeCodings/poster_m.jpg");
   } else if (window.innerWidth > 768) {
     //hero gradient
