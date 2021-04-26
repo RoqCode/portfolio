@@ -75,3 +75,34 @@ $("body").append(`
       </div>
     </footer>
 `);
+
+$(document).ready(function () {
+  imageSwapFooter();
+  console.log("ready");
+});
+
+$(window).resize(function () {
+  imageSwapFooter();
+});
+
+function imageSwapFooter() {
+  if (window.innerWidth <= 768) {
+    //footer gradient
+    $("#Kontakt").css(
+      "background-image",
+      "url('src/img/gradient2_footer_m.jpg')"
+    );
+  } else if (window.innerWidth > 768) {
+    //footer gradient
+    $("#Kontakt").css(
+      "background-image",
+      "url('src/img/gradient2_footer.jpg')"
+    );
+  } else {
+    //footer gradient
+    $("#Kontakt").css(
+      "background-image",
+      "url('src/img/gradient2_footer.jpg')"
+    );
+  }
+}
