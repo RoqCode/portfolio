@@ -12,11 +12,6 @@ function imageSwap() {
     console.log("small window");
     //hero gradient
     $("#hero").css("background-image", "url('src/img/gradient2_m.jpg')");
-    //footer gradient
-    $("#Kontakt").css(
-      "background-image",
-      "url('src/img/gradient2_footer_m.jpg')"
-    );
     //HMB
     $("#hmb-img").attr("src", "src/img/HMB_TitleCard_m.jpg");
     //anners Web
@@ -32,11 +27,6 @@ function imageSwap() {
   } else if (window.innerWidth > 768) {
     //hero gradient
     $("#hero").css("background-image", "url('src/img/gradient2.jpg')");
-    //footer gradient
-    $("#Kontakt").css(
-      "background-image",
-      "url('src/img/gradient2_footer.jpg')"
-    );
     //HMB
     $("#hmb-img").attr("src", "src/img/HMB_TitleCard.jpg");
     //anners Web
@@ -52,11 +42,6 @@ function imageSwap() {
   } else {
     //hero gradient
     $("#hero").css("background-image", "url('src/img/gradient2.jpg')");
-    //footer gradient
-    $("#Kontakt").css(
-      "background-image",
-      "url('src/img/gradient2_footer.jpg')"
-    );
     //HMB
     $("#hmb-img").attr("src", "src/img/HMB_TitleCard.jpg");
     //anners Web
