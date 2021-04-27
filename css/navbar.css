@@ -8,6 +8,10 @@
   z-index: 99;
 }
 
+#navBar * {
+  color: rgb(234, 66, 106);
+}
+
 #navBar ul {
   list-style: none;
   position: absolute;

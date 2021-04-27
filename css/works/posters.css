@@ -8,16 +8,16 @@
 
 .poster-big {
   max-height: 90vh;
-  margin-left: 5%;
-  max-width: 47.5%;
+  margin-left: 0;
+  max-width: 30%;
   display: inline-block;
 }
 
 .poster-big2 {
-  max-height: 110vh;
+  max-height: 90vh;
   margin-left: 5%;
-  display: inline-block;
   max-width: 47.5%;
+  display: inline-block;
 }
 
 .img-wrapper {

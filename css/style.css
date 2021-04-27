@@ -138,7 +138,7 @@ h3 {
 
 .gallery-card img {
   max-width: 100%;
-  transition: opacity 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .gallery-card img:hover {
@@ -147,7 +147,7 @@ h3 {
 
 .gallery-card video {
   max-width: 100%;
-  transition: opacity 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .gallery-card video:hover {
