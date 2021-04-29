@@ -27,21 +27,21 @@
 
 @media only screen and (max-width: 1250px) {
   .card {
-    max-width: 100%;
+    width: 100%;
     margin-bottom: 5em;
   }
 
   .letter {
-    max-width: 100%;
+    width: 100%;
   }
 
   .flyer {
-    max-width: 100%;
+    width: 100%;
     margin-top: 5em;
   }
 
   .posters {
-    max-width: 90%;
+    width: 90%;
     margin-left: 5%;
     margin-top: 5em;
   }

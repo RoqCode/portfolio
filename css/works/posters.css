@@ -1,7 +1,7 @@
 .poster-small {
   max-height: 70vh;
   margin-left: 5%;
-  max-width: 47.5%;
+  width: 47.5%;
 
   display: inline-block;
 }
@@ -9,14 +9,14 @@
 .poster-big {
   max-height: 90vh;
   margin-left: 0;
-  max-width: 30%;
+  width: 30%;
   display: inline-block;
 }
 
 .poster-big2 {
   max-height: 90vh;
   margin-left: 5%;
-  max-width: 47.5%;
+  width: 47.5%;
   display: inline-block;
 }
 
@@ -27,7 +27,7 @@
 
 .poster1 {
   position: relative;
-  max-width: 47.5%;
+  width: 47.5%;
 }
 
 .text-img-wrapper {
@@ -50,8 +50,13 @@
   .poster-big {
     margin-left: 0;
     max-height: 90vh;
-    max-width: 100%;
+    width: 100%;
     object-fit: contain;
     margin-bottom: 5em;
+  }
+
+  .poster-big2 {
+    width: 100%;
+    margin-left: 0;
   }
 }

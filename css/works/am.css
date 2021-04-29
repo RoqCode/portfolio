@@ -8,11 +8,11 @@
 
 @media only screen and (max-width: 1250px) {
   .mag-img {
-    max-width: 100%;
+    width: 100%;
   }
 
   .mag-img-small {
-    max-width: 100%;
+    width: 100%;
     margin-top: 5em;
   }
 
