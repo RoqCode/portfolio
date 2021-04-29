@@ -1,10 +1,10 @@
 .mag-web-img {
-  max-width: 50%;
+  width: 50%;
   margin-top: 10em;
 }
 
 .mag-img-small {
-  max-width: 40%;
+  width: 40%;
   margin-left: 5%;
   margin-top: 10em;
 }

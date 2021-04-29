@@ -1,5 +1,5 @@
 .moire-circles {
-  max-width: 50%;
+  width: 50%;
   margin-left: 5%;
   margin-top: 20em;
   display: inline-block;
@@ -113,6 +113,7 @@
 
 @media only screen and (max-width: 1250px) {
   .moire-circles {
+    width: auto;
     max-width: 90%;
   }
 

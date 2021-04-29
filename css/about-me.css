@@ -16,7 +16,7 @@
 }
 
 .portrait {
-  max-width: 30%;
+  max-width: 50%;
   display: inline-block;
   position: relative;
   top: 25em;
@@ -188,6 +188,13 @@
   .strengths-block {
     width: 80%;
   }
+  .portrait {
+    margin-left: 0;
+    display: block;
+    left: 15%;
+    max-width: 50%;
+    margin-top: -30em;
+  }
 }
 
 @media only screen and (max-width: 1150px) {
@@ -276,6 +283,11 @@
 
   .about-me-intro {
     font-size: 4em;
+  }
+
+  .portrait {
+    max-width: 80%;
+    left: 10%;
   }
 }
 
