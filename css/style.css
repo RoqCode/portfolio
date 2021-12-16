@@ -123,6 +123,11 @@ h3 {
   justify-content: space-between;
 }
 
+.transition-a {
+  text-decoration: none;
+  color: initial;
+}
+
 .works-head {
   padding-top: 1em;
   font-size: 16rem;
@@ -271,6 +276,7 @@ h3 {
   .spinner-wrap {
     display: none;
   }
+
   .endblock {
     display: none;
   }
