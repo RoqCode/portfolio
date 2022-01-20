@@ -126,6 +126,38 @@
   padding: 0 !important;
 }
 
+.icon {
+  position: relative;
+}
+
+.icon>svg {
+  max-width: 50px;
+  max-height: 50px;
+}
+
+.icon:hover .name-pop {
+  transform: translateY(0);
+}
+
+.name-pop {
+  color: white;
+  font-size: 1.5em;
+  text-align: center;
+  transform: translateY(-20px);
+
+  transition: transform 0.2s ease-in-out;
+}
+
+.pop-wrapper {
+  position: absolute;
+  bottom: -18px;
+  width: 200%;
+  height: 1.5em;
+  overflow: hidden;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .emptyicon {
   display: block;
   width: 50px;
@@ -188,6 +220,7 @@
   .strengths-block {
     width: 80%;
   }
+
   .portrait {
     margin-left: 0;
     display: block;
@@ -238,6 +271,7 @@
   .line {
     display: none;
   }
+
   .skill-text-wrapper {
     justify-content: flex-end;
     text-align: right;
