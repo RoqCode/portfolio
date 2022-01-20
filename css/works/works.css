@@ -94,6 +94,8 @@ h3 {
   -moz-hyphens: auto;
   -webkit-hyphens: auto;
   hyphens: auto;
+
+  line-height: 100%;
 }
 
 .sub-head {
@@ -184,6 +186,7 @@ h3 {
   .title-img {
     width: 100%;
   }
+
   .info-text {
     max-width: 40ch;
     margin: 2em 0 !important;
@@ -195,6 +198,7 @@ h3 {
   .next {
     margin-bottom: 0em;
   }
+
   .intro-wrapper {
     max-width: 90%;
     margin-top: 3em;
