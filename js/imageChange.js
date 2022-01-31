@@ -16,6 +16,10 @@ function imageSwap() {
     $("#hmb-img").attr("src", "src/img/HMB_TitleCard_m.jpg");
     //anners Web
     $("#anners-web-img").attr("src", "src/img/anners_web_titlecard_m.jpg");
+    //Reworks
+    $("#webseiten-img").attr("src", "src/img/webseiten_title_m.jpg");
+    //BHV malt
+    $("#bhv-malt-img").attr("src", "src/img/bhv_card_m.jpg");
     //anners Magazin
     $("#anners-mag-img").attr("src", "src/img/anners_magazin_titlecard_m.jpg");
     //posters
@@ -32,6 +36,10 @@ function imageSwap() {
     $("#hmb-img").attr("src", "src/img/HMB_TitleCard.jpg");
     //anners Web
     $("#anners-web-img").attr("src", "src/img/anners_web_titlecard.jpg");
+    //BHV malt
+    $("#bhv-malt-img").attr("src", "src/img/bhv_card.jpg");
+    //Reworks
+    $("#webseiten-img").attr("src", "src/img/webseiten_title_m.jpg");
     //anners Magazin
     $("#anners-mag-img").attr("src", "src/img/anners_magazin_titlecard.jpg");
     //posters
@@ -47,6 +55,10 @@ function imageSwap() {
     $("#hmb-img").attr("src", "src/img/HMB_TitleCard.jpg");
     //anners Web
     $("#anners-web-img").attr("src", "src/img/anners_web_titlecard.jpg");
+    //BHV malt
+    $("#bhv-malt-img").attr("src", "src/img/bhv_card.jpg");
+    //Reworks
+    $("#webseiten-img").attr("src", "src/img/webseiten_title_m.jpg");
     //anners Magazin
     $("#anners-mag-img").attr("src", "src/img/anners_magazin_titlecard.jpg");
     //posters

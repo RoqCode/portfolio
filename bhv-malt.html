@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="keywords"
+        content="Portfolio, Haas, Hajo, Grafik Design, HTML, CSS, JavaScript, Front End Development, Branding" />
+    <meta name="description"
+        content="Portfolio von Hajo Haas. Hier zeige ich meine besten Arbeiten aus meinem Studium und ausgewählte persönliche Projekte." />
+    <meta name="author" content="Hajo Haas" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/works/works.css" />
+    <link rel="stylesheet" href="css/transition.css" />
+    <link rel="stylesheet" href="css/works/amw.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/wge6wtn.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital@0;1&display=swap" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <title>Hajo Haas | Bremerhaven malt</title>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/navBarInject.js" defer></script>
+    <script src="js/footerInject.js" defer></script>
+    <script src="js/transition.js" defer></script>
+</head>
+
+<body>
+    <div class="works-intro">
+        <div class="intro-wrapper">
+            <h1 class="white">
+                Bremerhaven malt
+            </h1>
+            <h1 class="red-outline sub-head">kreatives Programmieren <br /> in Processing</h1>
+            <p class="intro-text text white">
+                Das Projekt "Bremerhaven malt" entstand in Zusammenarbeit mit dem <a href="https://www.cityskipper.de"
+                    target="_blank" class="red italic">City
+                    Skipper
+                    e.V.
+                    /></a>. Im Rahmen der Initiative "Wissenschaft & Shopping" sollte am 07.11.21 ein verkaufsoffener
+                Sonntag durch eine Lichtinstallation unterstützt werden. Das Ziel war es, Menschen in die Innenstadt zu
+                locken, um diese als attraktives Einkaufs- und Erlebnisziel zu bewerben.
+            </p>
+        </div>
+        <img class="title-img" src="src/img/bhv_malt/title_img.jpg" alt="anners Web Landing Page" />
+    </div>
+    <div class="text-img-wrapper">
+        <p class="text white info-text">
+            Wir hatten die Idee, die Besucher in einem gemeinsamen Prozess teilnehmen zu lassen. Wir benutzten
+            eine XBOX-Kinect, um die Besucher und ihre Bewegungen aufzuzeichnen und die Bilder durch einen Algorithmus
+            zu abstrahieren, um ein Bild zu malen.
+        </p>
+        <p class="text white info-text">
+            Dieses gemalte Einzelbild wurde periodisch abgespeichert. Die gesamelten Einzelbilder wurden im Anschluss zu
+            einem großen
+            gemeinsamen Gemälde zusammengesetzt. So hatte jede Besucher:in die Möglichkeit ein Teil des Prozesses
+            zu sein und seine/ihre Kreation verewigen zu lassen.
+        </p>
+    </div>
+    <div class="text-img-wrapper">
+        <div style="position: relative; width: 100%; height: 100%;">
+            <p class="text white info-text" style="position: absolute; z-index:99; top: 1em; margin-left: 1em;" ;">
+                Rohdaten der Kinect</p>
+            <img class="captioned-img" src="src/img/bhv_malt/langzeit.jpg" alt="anners Magazin Cover" />
+        </div>
+        <p class="text white info-text">
+            Um das Bild zu generieren, benutzten wir die Infrarot-Daten aus der Kinect. Dies hatte einen großen Vorteil.
+            Die Infrarot-Daten enthalten Informationen über die Distanz zum erfassten Objekt. Dadurch war es uns möglich
+            den Bereich, den die Kinect erfasst zu begrenzen. Da das Projekt in einer geschäftigen Einkaufsstraße
+            stattfinden sollte können wir so Bilder in einem isolierten Bereich erfassen und den Hintergrund unbeachtet
+            lassen.
+        </p>
+    </div>
+    <div class="text-img-wrapper">
+        <p class="text white info-text">
+            Unser generiertes Bild sollte sich langsam aufbauen, damit die Besucher:innen Zeit hatten, um ihr Werk zu
+            malen. Hierbei sind wir auf die Prinzipien der Langzeitbelichtung aus der Fotografie zurückgekommen.
+            "Aktive" Pixel sollten langsam ihre Helligkeit oder Farbe ändern, um einen graduellen Aufbau zu erwirken.
+        </p>
+        <div style="position: relative; width: 100%; height: 100%;">
+            <div style="width: 70%; position: relative; left: 50%; transform: translateX(-50%);">
+                <img class="stacked-img" src="src/img/bhv_malt/abstrakt_farbe_1.jpg" alt="anners Magazin Cover" />
+                <p class="text white info-text" style="position: absolute; z-index:99; top: 1em; margin-left: 1.5em;"
+                    ;">
+                    Abstraktion durch Farbe</p>
+                <img class="stacked-img" src="src/img/bhv_malt/abstrakt_farbe_2.jpg" alt="anners Magazin Cover" />
+            </div>
+        </div>
+    </div>
+    <div class="text-img-wrapper">
+        <p class="text white info-text">
+            Für uns war es besonders wichtig, dass das entstandene Bild möglichst abstrakt sein sollte. Einerseits um
+            DSGVO-Verstöße zu vermeiden, aber auch damit das Zeichnen von konkreten Symbolen oder gar Schrift nicht
+            möglich war. Hierbei kamen wir zu einem Ansatz, bei dem die aktiven Pixel Formen zeichnen. Dies erschien uns
+            als Lösung am besten, denn so konnten die Benutzer:innen genug Einfluss auf das Bild nehmen um es zu ihrem
+            eigenen zu machen, ohne, dass das Zeichnen von Symbolen oder Schrift möglich war.
+        </p>
+        <div style="position: relative; width: 100%; height: 100%;">
+            <div style="width: 70%; position: relative; left: 50%; transform: translateX(-50%);">
+                <img class="stacked-img" src="src/img/bhv_malt/abstrakt-form-1.jpg" alt="anners Magazin Cover" />
+                <p class="text white info-text" style="position: absolute; z-index:99; top: 1em; margin-left: 1.5em;"
+                    ;">
+                    Abstraktion durch Form</p>
+                <img class="stacked-img" src="src/img/bhv_malt/abstrakt-form-2.jpg" alt="anners Magazin Cover" />
+            </div>
+        </div>
+    </div>
+    <h1 style="margin: 0 5%;" class="red sub-head">Tag der Präsentation</h1>
+    <img class="pres-img-big" src="src/img/bhv_malt/presentation/Present_big.jpg">
+    <div class="pres-triple-container">
+        <img src="src/img/bhv_malt/presentation/Present_small_1.jpg" alt="">
+        <img src="src/img/bhv_malt/presentation/Present_small_2.jpg" alt="">
+        <img src="src/img/bhv_malt/presentation/Present_small_3.jpg" alt="">
+    </div>
+    <img class="pres-img-big" src="src/img/bhv_malt/presentation/Present_big_2.jpg">
+    <p style="margin-left: 15%;" class="text white info-text">Entstandene Roh-Bilder</p>
+    <div class="pres-triple-container">
+        <img src="src/img/bhv_malt/presentation/row1_col8_18_131958.png" alt="">
+        <img src="src/img/bhv_malt/presentation/row4_col6_46_13482.png" alt="">
+        <img src="src/img/bhv_malt/presentation/row3_col6_36_13380.png" alt="">
+    </div>
+    <div class="text-img-wrapper">
+        <div>
+            <p class="text white info-text">
+                Die aufgezeichneten Roh-Bilder haben wir im Anschluss zu einem Gesamtgemälde zusammengesetzt. Es ist das
+                Ergebnis aller Bilder, die an diesem Tag von den Besuchern bewusst oder auch unbewusst im Vorbeigehen
+                gezeichnet wurden. Zusammen zeigt das Bild den Bremerhavener Sonnenuntergang.
+            </p>
+            <br />
+            <br />
+            <p class="text red info-text" style="margin-bottom: -1.5em; margin-top: 1em;">Reaktionen der Presse auf
+                Bremerhaven malt:</p>
+            <div style="margin: 0 5%;">
+                <div>
+                    <div class="button">
+                        <a href="https://www.instagram.com/p/CV43KVUKS2c/" target="_blank">
+                            <span class="text white italic">HS Bremerhaven -></span></a>
+                    </div>
+                </div>
+                <div>
+                    <div class="button">
+                        <a href="https://www.nord24.de/bremerhaven/lichtkunst-lockt-trotz-regen-in-die-city-69076.html"
+                            target="_blank">
+                            <span class="text white italic">Nord24 -></span></a>
+                    </div>
+                </div>
+                <div>
+                    <div class="button">
+                        <a href="https://www.cityskipper.de/einkaufen-erleben/aktuelles/bremerhaven-malt-das-ergebnis"
+                            target="_blank">
+                            <span class="text white italic">City Skipper -></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img class="mag-web-img" src="src/img/bhv_malt/presentation/end-produkt.jpg" alt="anners Magazin Cover" />
+    </div>
+    <br />
+    <div class="next">
+        <a class="transition-a" href="olbers-rework.html">
+            <h1 class="next-text">Weiter</h1>
+        </a>
+    </div>
+</body>
+
+</html>
