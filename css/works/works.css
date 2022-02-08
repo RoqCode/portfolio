@@ -161,6 +161,13 @@ h3 {
   margin: 10em 5%;
 }
 
+.over-pic {
+  position: absolute !important;
+  z-index: 99;
+  top: 1em;
+  margin-left: 1em;
+}
+
 @media only screen and (max-width: 1250px) {
   .works-intro {
     flex-direction: column-reverse;
@@ -191,6 +198,11 @@ h3 {
     max-width: 40ch;
     margin: 2em 0 !important;
     align-self: flex-start;
+  }
+
+  .over-pic {
+    margin-left: 1em !important;
+    top: -1em;
   }
 }
 

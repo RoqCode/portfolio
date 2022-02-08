@@ -56,6 +56,10 @@
   max-width: 31%;
 }
 
+.link-container {
+  margin: 0 5%;
+}
+
 @media only screen and (max-width: 1981px) {
   .old-img-small {
     max-width: 100%;
@@ -79,6 +83,10 @@
   .old-img-small {
     max-width: 100%;
     margin-right: 0;
+  }
+
+  .link-container {
+    margin: -9em 0 0 0;
   }
 }
 
