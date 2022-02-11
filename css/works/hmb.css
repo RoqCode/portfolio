@@ -35,6 +35,10 @@
     margin-bottom: 5em;
   }
 
+  .reverse {
+    flex-direction: column-reverse;
+  }
+
   .letter {
     width: 100%;
   }
