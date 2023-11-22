@@ -49,7 +49,7 @@ document.body.insertAdjacentHTML(
       <ul>
         <li class="nav-link"><a class="nav-link-a transition-a" href="index.html#Arbeiten">Arbeiten</a></li>
         <li class="nav-link"><a class="nav-link-a transition-a" href="about-me.html">Über mich</a></li>
-        <li class="nav-link"><a class="nav-link-a transition-a" href="index.html#Kontakt">Kontakt</a></li>
+        <li class="nav-link"><a class="nav-link-a" href="#Kontakt">Kontakt</a></li>
       </ul>
        <div class="back-to-top">
       <svg

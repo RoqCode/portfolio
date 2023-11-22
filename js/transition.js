@@ -11,9 +11,9 @@ document.body.insertAdjacentHTML(
 );
 
 const transitions = document.querySelectorAll('.transition');
-const anchors = document.querySelectorAll('.transition-a');
 
-window.addEventListener('load', function () {
+window.addEventListener('DOMContentLoaded', function () {
+  const anchors = document.querySelectorAll('.transition-a');
   transitions.forEach((transition, i) => {
     transition.addEventListener('transitionend', function () {
       this.classList.remove('transition-function');
@@ -24,6 +24,8 @@ window.addEventListener('load', function () {
       transition.classList.remove('is-active');
     }, Math.floor(Math.random() * 500 + 300));
   });
+
+  console.log(anchors);
 
   anchors.forEach((anchor) => {
     anchor.addEventListener('click', function (e) {
@@ -45,7 +47,7 @@ window.addEventListener('load', function () {
 
         setTimeout(() => {
           window.location.href = target;
-        }, 1800);
+        }, 1200);
       }
     });
   });
