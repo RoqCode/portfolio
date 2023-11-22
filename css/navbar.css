@@ -24,6 +24,14 @@
   left: 2vw;
 }
 
+#nav-logo svg path {
+  transition: fill 0.2s ease-in-out;
+}
+
+#nav-logo.white-bg svg path {
+  fill: rgb(234, 66, 106);
+}
+
 .nav-link a {
   color: white;
   text-decoration: none;
@@ -36,7 +44,7 @@
 }
 
 .nav-link-a::before {
-  content: "";
+  content: '';
   display: block;
   width: 0;
   height: 2px;
@@ -67,8 +75,14 @@
   z-index: 99;
   cursor: pointer;
   box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
-
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
   display: none;
+}
+
+.back-to-top.visible {
+  display: block;
+  opacity: 1;
 }
 
 .back-to-top svg {

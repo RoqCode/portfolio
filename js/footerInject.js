@@ -1,6 +1,8 @@
-$("body").append(`
-    <footer>
-      <div id="Kontakt"
+document.body.insertAdjacentHTML(
+  'beforeend',
+  `
+<footer>
+  <div id="Kontakt"
         class="contacts"
       >
         <h1 class="footer-head">Kontakt</h1>
@@ -73,36 +75,25 @@ $("body").append(`
         </div>
         <div class="block"></div>
       </div>
-    </footer>
-`);
+</footer>`
+);
 
-$(document).ready(function () {
+document.addEventListener('DOMContentLoaded', function () {
   imageSwapFooter();
-  console.log("ready");
 });
 
-$(window).resize(function () {
+window.addEventListener('resize', function () {
   imageSwapFooter();
 });
 
 function imageSwapFooter() {
-  if (window.innerWidth <= 768) {
-    //footer gradient
-    $("#Kontakt").css(
-      "background-image",
-      "url('src/img/gradient2_footer_m.jpg')"
-    );
-  } else if (window.innerWidth > 768) {
-    //footer gradient
-    $("#Kontakt").css(
-      "background-image",
-      "url('src/img/gradient2_footer.jpg')"
-    );
+  let width = window.innerWidth;
+
+  if (width <= 768) {
+    document.getElementById('Kontakt').style.backgroundImage =
+      "url('src/img/gradient2_footer_m.jpg')";
   } else {
-    //footer gradient
-    $("#Kontakt").css(
-      "background-image",
-      "url('src/img/gradient2_footer.jpg')"
-    );
+    document.getElementById('Kontakt').style.backgroundImage =
+      "url('src/img/gradient2_footer.jpg')";
   }
 }

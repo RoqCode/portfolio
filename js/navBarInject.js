@@ -1,4 +1,6 @@
-$("body").prepend(`
+document.body.insertAdjacentHTML(
+  'afterbegin',
+  `
     <div id="navBar" class="text white">
     <a class="transition-a" href="index.html">
       <div id="nav-logo">
@@ -64,27 +66,39 @@ $("body").prepend(`
       </svg>
     </div>
     </div>
-`);
+`
+);
 
-let button = $(".back-to-top");
+let button = document.querySelector('.back-to-top');
 let d = 600;
 
-$(window).scroll(function () {
-  if (document.body.scrollTop > d || document.documentElement.scrollTop > d) {
-    button.fadeIn("fast");
-  } else {
-    button.fadeOut("fast");
-  }
-});
+window.addEventListener(
+  'scroll',
+  function () {
+    if (this.window.scrollY >= d && !button.classList.contains('visible')) {
+      button.style.display = 'block';
+      setTimeout(function () {
+        button.classList.add('visible');
+      }, 200);
+    } else if (
+      this.window.scrollY <= d &&
+      button.classList.contains('visible')
+    ) {
+      button.classList.remove('visible');
+      setTimeout(function () {
+        button.style.display = 'none';
+      }, 200);
+    }
+  },
+  { passive: true }
+);
 
-button.click(() => {
+button.addEventListener('click', function () {
   if (iOS()) {
-    $("html, body").animate(
-      {
-        scrollTop: 0,
-      },
-      800
-    );
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
   } else {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
@@ -94,14 +108,49 @@ button.click(() => {
 function iOS() {
   return (
     [
-      "iPad Simulator",
-      "iPhone Simulator",
-      "iPod Simulator",
-      "iPad",
-      "iPhone",
-      "iPod",
+      'iPad Simulator',
+      'iPhone Simulator',
+      'iPod Simulator',
+      'iPad',
+      'iPhone',
+      'iPod',
     ].includes(navigator.platform) ||
-    // iPad on iOS 13 detection
-    (navigator.userAgent.includes("Mac") && "ontouchend" in document)
+    (navigator.userAgent.includes('Mac') && 'ontouchend' in document)
   );
+}
+
+const logo = document.querySelector('#nav-logo');
+const whiteElemtents = document.querySelectorAll('#works-gallery');
+
+window.addEventListener(
+  'scroll',
+  function () {
+    //if logo intersects with white elements
+    if (isIntersecting(logo, whiteElemtents)) {
+      logo.classList.add('white-bg');
+    } else {
+      logo.classList.remove('white-bg');
+    }
+  },
+  { passive: true }
+);
+
+function isIntersecting(element, elements) {
+  let rect = element.getBoundingClientRect();
+  let top = rect.top;
+  let bottom = rect.bottom;
+
+  let isIntersecting = false;
+
+  elements.forEach((element) => {
+    let rect = element.getBoundingClientRect();
+    let topElement = rect.top;
+    let bottomElement = rect.bottom;
+
+    if (top <= bottomElement && bottom >= topElement) {
+      isIntersecting = true;
+    }
+  });
+
+  return isIntersecting;
 }

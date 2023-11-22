@@ -1,52 +1,52 @@
-$("body").prepend(`
-    <div class="transition-wrap">
-    <div class="transition transition-1 transition-function is-active">
-    </div>
+document.body.insertAdjacentHTML(
+  'afterbegin',
+  `
+  <div class="transition-wrap">
+    <div class="transition transition-1 transition-function is-active"></div>
     <div class="transition transition-2 transition-function is-active"></div>
     <div class="transition transition-3 transition-function is-active"></div>
     <div class="transition transition-4 transition-function is-active"></div>
   </div>
-`);
+`
+);
 
-const transitions = $(".transition");
-const anchors = $(".transition-a");
+const transitions = document.querySelectorAll('.transition');
+const anchors = document.querySelectorAll('.transition-a');
 
-$(window).on("load", function () {
-  console.log("load");
-
-  for (let i = 0; i < transitions.length; i++) {
-    $(transitions[i]).one("transitionend", function () {
-      $(this).removeClass("transition-function");
-      $(this).css("top", "100vh");
+window.addEventListener('load', function () {
+  transitions.forEach((transition, i) => {
+    transition.addEventListener('transitionend', function () {
+      this.classList.remove('transition-function');
+      this.style.top = '100vh';
     });
 
-    setTimeout(function () {
-      $(transitions[i]).removeClass("is-active");
+    setTimeout(() => {
+      transition.classList.remove('is-active');
     }, Math.floor(Math.random() * 500 + 300));
-  }
+  });
 
-  for (let i = 0; i < anchors.length; i++) {
-    $(anchors[i]).click((e) => {
+  anchors.forEach((anchor) => {
+    anchor.addEventListener('click', function (e) {
       e.preventDefault();
-      let target = e.currentTarget.href;
-      console.log(target, window.location.href);
+      let target = this.href;
+
       if (
-        target.includes("index.html") &&
-        window.location.href.includes("index.html")
+        target.includes('index.html') &&
+        window.location.href.includes('index.html')
       ) {
         window.location.href = target;
       } else {
-        for (let i = 0; i < transitions.length; i++) {
-          setTimeout(function () {
-            $(transitions[i]).addClass("transition-function");
-            $(transitions[i]).addClass("is-active");
+        transitions.forEach((transition, i) => {
+          setTimeout(() => {
+            transition.classList.add('transition-function');
+            transition.classList.add('is-active');
           }, Math.floor(Math.random() * 500 + 300));
-        }
+        });
 
-        setTimeout(function () {
+        setTimeout(() => {
           window.location.href = target;
         }, 1800);
       }
     });
-  }
+  });
 });
