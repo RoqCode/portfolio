@@ -4,9 +4,10 @@
 }
 
 .nice {
-  margin-top: -0.2em;
+  margin-top: 0.2em;
   font-size: 10em;
   font-weight: 600;
+  line-height: 1em;
 }
 
 .intro-wrapper {
@@ -61,7 +62,7 @@
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-  width: 70%;
+  width: 100%;
   margin-top: 16em;
 }
 
@@ -75,13 +76,14 @@
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
+  column-gap: 1em;
 }
 
 .strengths {
   margin-top: 1em;
   flex-grow: 0;
   flex-shrink: 0;
-  flex-basis: 50%;
+  flex-basis: calc(50% - 0.5em);
 }
 
 .skills-block {
@@ -89,7 +91,7 @@
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-  width: 70%;
+  width: 100%;
 }
 
 .skill {
@@ -172,6 +174,9 @@
 .icon-wrapper {
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  row-gap: 2rem;
   width: auto;
 }
 
@@ -213,6 +218,10 @@
     width: 80%;
   }
 
+  .skill {
+    flex-direction: column;
+  }
+
   .portrait {
     margin-left: 0;
     display: block;
@@ -241,7 +250,6 @@
 
   .nice {
     font-size: 8em;
-    font-weight: 400;
   }
 }
 
@@ -289,10 +297,6 @@
     margin-top: 10em;
   }
 
-  .skill {
-    flex-direction: column;
-  }
-
   .emptyicon {
     display: none;
   }
@@ -307,7 +311,8 @@
     display: none;
   }
 
-  .about-me-intro {
+  .about-me-intro,
+  .strengths-header {
     font-size: 4em;
   }
 

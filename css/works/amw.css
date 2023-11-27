@@ -9,6 +9,10 @@
   margin-top: 10em;
 }
 
+.flex-wrapper .mag-img-small:first-child {
+  margin-left: 0;
+}
+
 .captioned-img {
   width: 100%;
 }
@@ -28,7 +32,7 @@
   margin-right: 5%;
 }
 
-.button>a {
+.button > a {
   text-decoration: none;
 }
 
@@ -52,7 +56,7 @@
   justify-content: space-between;
 }
 
-.pres-triple-container>img {
+.pres-triple-container > img {
   max-width: 31%;
 }
 
@@ -103,7 +107,7 @@
     justify-content: space-between;
   }
 
-  .pres-triple-container>img {
+  .pres-triple-container > img {
     max-width: 100%;
     margin: 2em 0;
   }

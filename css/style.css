@@ -230,13 +230,13 @@ h3 {
 
 .hmb-card {
   width: 50%;
-  margin-top: -20vw;
+  margin-top: 20em;
 }
 
 .anners-web-card {
   position: relative;
   width: 40%;
-  margin-top: 20em;
+  margin-top: 5em;
 }
 
 .reworks-card {
@@ -245,20 +245,27 @@ h3 {
   margin-top: 20em;
 }
 
+.girschner-card {
+  position: relative;
+  width: 50%;
+  margin-top: 20em;
+}
+
 .bhv-malt-card {
   position: relative;
   width: 40%;
+  margin-top: 20em;
 }
 
 .magazin-card {
   position: relative;
-  width: 40%;
+  width: 50%;
 }
 
 .poster-card {
   position: relative;
   width: 40%;
-  margin-top: 20em;
+  margin-top: 5em;
 }
 
 .kulinarium-card {
@@ -270,7 +277,7 @@ h3 {
 .creative-card {
   position: relative;
   width: 40%;
-  margin-top: 20em;
+  margin-top: 15em;
 }
 
 .creative-video {

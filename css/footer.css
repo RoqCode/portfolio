@@ -27,7 +27,6 @@ footer a:hover {
 
 .footer-button {
   pointer-events: none;
-  display: block;
 }
 
 .footer-button a {

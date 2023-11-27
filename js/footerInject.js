@@ -5,16 +5,17 @@ document.body.insertAdjacentHTML(
   <div id="Kontakt"
         class="contacts"
       >
-        <h1 class="footer-head">Kontakt</h1>
+        <h2 class="footer-head">Kontakt</h2>
         <p class="call-to-action white text">
           Überzeugt?<br />Dann schreib mir eine E-Mail :)
         </p>
-      
+      <br />
         <div class="button footer-button italic">
         <a href="mailto:hajohaas@gmx.de">
           <span class="email white text">hajohaas@gmx.de</span>
         </a>
         </div>
+        <br />
         <div class="contact-icons">
           <div class="insta-icon">
             <a href="https://www.instagram.com/itsroq/" target="_blank">
