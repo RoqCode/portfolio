@@ -18,7 +18,7 @@ document.body.insertAdjacentHTML(
         <br />
         <div class="contact-icons">
           <div class="insta-icon">
-            <a href="https://www.instagram.com/itsroq/" target="_blank">
+            <a href="https://www.instagram.com/itsroq/" target="_blank" title="Instagram">
               <svg
                 width="50"
                 height="50"
@@ -34,7 +34,7 @@ document.body.insertAdjacentHTML(
             </a>
           </div>
           <div class="linkedin-icon">
-            <a href="https://www.linkedin.com/in/hajo-haas-2b1611210/" target="_blank">
+            <a href="https://www.linkedin.com/in/hajo-haas-2b1611210/" target="_blank" title="LinkedIn">
               <svg
                 width="50"
                 height="50"
@@ -52,7 +52,7 @@ document.body.insertAdjacentHTML(
             </a>
           </div>
           <div class="github-icon">
-            <a href="https://github.com/RoqCode" target="_blank">
+            <a href="https://github.com/RoqCode" target="_blank" title="GitHub">
               <svg
                 width="51"
                 height="49"
