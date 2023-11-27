@@ -25,8 +25,6 @@ window.addEventListener('DOMContentLoaded', function () {
     }, Math.floor(Math.random() * 500 + 300));
   });
 
-  console.log(anchors);
-
   anchors.forEach((anchor) => {
     anchor.addEventListener('click', function (e) {
       e.preventDefault();
