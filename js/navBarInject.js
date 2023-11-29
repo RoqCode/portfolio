@@ -2,7 +2,7 @@ document.body.insertAdjacentHTML(
   'afterbegin',
   `
     <div id="navBar" class="text white">
-    <a class="transition-a" href="index.html">
+    <a class="transition-a" href="index.html" title="Zur Startseite">
       <div id="nav-logo">
         <svg
           width="74"
